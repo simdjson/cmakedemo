@@ -1,0 +1,3 @@
+[submodule "dependencies/simdjson"]
+	path = dependencies/simdjson
+	url = https://github.com/simdjson/simdjson.git

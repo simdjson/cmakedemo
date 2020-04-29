@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.9) # CMP0069 NEW
+
+project(simdjson
+  DESCRIPTION "simdjson demo"
+  LANGUAGES CXX 
+)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_MACOSX_RPATH OFF)
+set(CMAKE_THREAD_PREFER_PTHREAD ON)
+set(THREADS_PREFER_PTHREAD_FLAG ON) 
+
+set(PROJECT_VERSION_MAJOR 0)
+set(PROJECT_VERSION_MINOR 0)
+set(PROJECT_VERSION_PATCH 1)
+add_subdirectory(dependencies)
+add_subdirectory(src)
+
