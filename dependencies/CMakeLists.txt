@@ -10,8 +10,9 @@ function(initialize_submodule DIRECTORY)
     endif()
   endif()
 endfunction(initialize_submodule)
-
   initialize_submodule(simdjson)
   add_library(simdjsondep INTERFACE)
   target_include_directories(simdjsondep INTERFACE simdjson/include)
-  add_subdirectory(simdjson EXCLUDE_FROM_ALL)
+
+set(SIMDJSON_COMPETITION OFF CACHE STRING "Do not give me all the dependencies." FORCE)
+add_subdirectory(simdjson EXCLUDE_FROM_ALL)
