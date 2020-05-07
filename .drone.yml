@@ -1,0 +1,19 @@
+kind: pipeline
+name: gcc9
+platform: { os: linux, arch: amd64 }
+steps:
+- name: Build and Test
+  image: gcc:9
+  environment:
+    CC: gcc
+    CXX: g++
+    BUILD_FLAGS: -- -j
+    CTEST_FLAGS: -j4 --output-on-failure
+  commands:
+    - apt-get update -qq
+    - apt-get install -y cmake 
+    - mkdir build
+    - cd build
+    - cmake $CMAKE_FLAGS ..
+    - cmake --build . $BUILD_FLAGS
+    - ./src/test  ../dependencies/simdjson/jsonexamples/twitter.json
