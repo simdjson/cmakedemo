@@ -1,4 +1,5 @@
 # Simple demo to show that we can use simdjson as a CMake dependency.
+[![Build Status](https://cloud.drone.io/api/badges/simdjson/cmakedemo/status.svg)](https://cloud.drone.io/simdjson/cmakedemo)
 
 Usage:
 
