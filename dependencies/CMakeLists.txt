@@ -14,5 +14,5 @@ endfunction(initialize_submodule)
   add_library(simdjsondep INTERFACE)
   target_include_directories(simdjsondep INTERFACE simdjson/include)
 
-set(SIMDJSON_COMPETITION OFF CACHE STRING "Do not give me all the dependencies." FORCE)
+set(SIMDJSON_JUST_LIBRARY ON CACHE STRING "Do not give me all the dependencies." FORCE)
 add_subdirectory(simdjson EXCLUDE_FROM_ALL)
