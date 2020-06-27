@@ -12,5 +12,4 @@ function(initialize_submodule DIRECTORY)
 endfunction(initialize_submodule)
 initialize_submodule(simdjson)
 
-set(SIMDJSON_JUST_LIBRARY ON CACHE STRING "Do not give me all the dependencies." FORCE)
 add_subdirectory(simdjson EXCLUDE_FROM_ALL)
