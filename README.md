@@ -13,8 +13,18 @@ The simple `CMake` project builds a simple parser (`./src/test`) which can parse
 
 Please refer to the main [simdjson](https://github.com/simdjson/simdjson) project for further documentation.
 
+## How to add simdjson as a CMake dependency
 
-## How to add a submodule?
+Fundamentally, it is as simple as adding the following line after copying the project as a subdirectory in your own project:
+
+```
+add_subdirectory(simdjson EXCLUDE_FROM_ALL)
+```
+
+## Why and how to add a submodule?
+
+If your own project is under git, you probably do not want to copy simdjson in your own git repository. Instead, you want to add it as a submodule.
+
 
 Once you have a git repository, adding simdjson as a submodule is relatively easy, type:
 
