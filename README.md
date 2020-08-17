@@ -37,6 +37,10 @@ Using submodules, you can control exactly which version your colleagues are usin
 
 Then you can just follow our example.
 
+## FetchContent
+
+We can also do [a demo using a single CMakeLists.txt file](https://github.com/simdjson/cmake_demo_single_file).
+
 ## ExternalProject
 
 Users who prefer to use CMake's `ExternalProject` approach may refer to [our example](https://github.com/simdjson/cmakedemo_externalproject).
