@@ -1,7 +1,7 @@
 # Simple demo of simdjson as a CMake dependency.
 [![Build Status](https://cloud.drone.io/api/badges/simdjson/cmakedemo/status.svg)](https://cloud.drone.io/simdjson/cmakedemo)
 
-This repository is meant to serve as an example of how to use [simdjson](https://github.com/simdjson/simdjson) as a `CMake` dependency by having simdjson as a git submodule. 
+This repository is meant to serve as an example of how to use [simdjson](https://github.com/simdjson/simdjson) as a `CMake` dependency by having simdjson as a git submodule. It is not the most efficient approach, read on for faster approaches.
 
 Usage:
 
