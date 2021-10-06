@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.9) # CMP0069 NEW
+cmake_minimum_required(VERSION 3.14) # CMP0069 NEW
 
 project(simdjson
   DESCRIPTION "simdjson demo"
