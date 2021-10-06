@@ -3,7 +3,7 @@
 int main(int argc, char* argv[]) {
   if(argc < 2) {
       std::cout << "provide the filename of a JSON file" << std::endl;
-      return EXIT_FAILURE;
+      return EXIT_SUCCESS;
   }
   try {
     simdjson::dom::parser parser;
