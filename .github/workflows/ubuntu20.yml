@@ -15,4 +15,4 @@ jobs:
         run: |
           cmake -B build .
           cmake --build build
-          ./build/src/repro
+          ./build/src/test

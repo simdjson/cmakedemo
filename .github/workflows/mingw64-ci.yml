@@ -48,4 +48,4 @@ jobs:
           git --version
           cmake -B build .
           cmake --build build
-          ./build/src/test
+          ./build/ src/test
