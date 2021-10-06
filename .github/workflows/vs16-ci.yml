@@ -17,9 +17,5 @@ jobs:
         cmakeBuildType: Release   
         buildWithCMake: true
         cmakeGenerator: VS16Win64 
-        buildWithCMakeArgs: --config Release  
-        
-    - name: 'Run CTest'
-      run: Release\src\repro.exe
-      working-directory: "${{ github.workspace }}/../../_temp/windows"
+        buildWithCMakeArgs: --config Release
   
