@@ -1,4 +1,5 @@
 #include "simdjson.h"
+#include <iostream>
 int main(int argc, char* argv[]) {
   if(argc < 2) {
       std::cout << "provide the filename of a JSON file" << std::endl;
