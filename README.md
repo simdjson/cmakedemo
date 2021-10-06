@@ -1,5 +1,11 @@
 # Simple demo of simdjson as a CMake dependency.
-[![Build Status](https://cloud.drone.io/api/badges/simdjson/cmakedemo/status.svg)](https://cloud.drone.io/simdjson/cmakedemo)
+
+![MSYS2](https://github.com/simdjson/cmakedemo/workflows/MSYS2-CI/badge.svg)
+![Ubuntu 18.04](https://github.com/simdjson/cmakedemo/workflows/Ubuntu%2018.04%20CI%20(GCC%207)/badge.svg)
+![Ubuntu 20.04](https://github.com/simdjson/cmakedemo/workflows/Ubuntu%2020.04%20CI%20(GCC%209)/badge.svg)
+![Visual Studio 2019](https://github.com/simdjson/cmakedemo/workflows/VS16-CI/badge.svg)
+![Visual Studio 2019 clang](https://github.com/simdjson/cmakedemo/workflows/VS16-CLANG-CI/badge.svg)
+![Visual Studio 2019 Ninja](https://github.com/simdjson/cmakedemo/workflows/VS16-Ninja-CI/badge.svg)
 
 This repository is meant to serve as an example of how to use [simdjson](https://github.com/simdjson/simdjson) as a `CMake` dependency by having simdjson as a git submodule. It is not the most efficient approach, read on for faster approaches.
 
